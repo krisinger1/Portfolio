@@ -1,0 +1,25 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+}
+
+h1 {
+   font-family: 'Slabo 27px',Gerogia, serif;
+   font-size: 2.5em;
+   font-weight: 400;;
+   color: skyblue
+}
+
+h2 {
+   font-family: 'Slabo 27px',Gerogia, serif;
+   font-size: 1.5em;
+   color: cornflowerblue;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.hidden {
+    visibility: hidden;;
+}
