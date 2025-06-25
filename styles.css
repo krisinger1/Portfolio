@@ -1,19 +1,77 @@
 * {
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    /* padding: 0; */ 
+    border: 1px pink solid;
 }
 
+/*
+9C466A pink
+7E469C purple
+659C46 green
+E3BFD1 lt pink
+C9B4D4 lt purple
+B7CCAB lt green
+2E332B dk green
+332B2F dk pink
+*/
+
+main {
+    padding: 20px;
+}
+
+
 h1 {
-   font-family: 'Slabo 27px',Gerogia, serif;
-   font-size: 2.5em;
-   font-weight: 400;;
-   color: skyblue
+    font-family: 'Slabo 27px',Gerogia, serif;
+    font-size: 2.5em;
+    font-weight: 400;;
+    color: ivory
 }
 
 h2 {
-   font-family: 'Slabo 27px',Gerogia, serif;
-   font-size: 1.5em;
-   color: cornflowerblue;
+    font-family: 'Slabo 27px',Gerogia, serif;
+    font-size: 1.5em;
+    color: cornflowerblue;
+}
+
+header {
+    background-color: rgb(101, 155, 69);
+    text-align: left;
+    padding: 20px;
+    margin: 0px;    
+}
+
+nav {
+    font-family: 'Slabo 27px',Gerogia, serif;
+    color: cornflowerblue;
+    text-align: left;
+}
+
+nav ul{
+    padding-left:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+nav li {
+    display: inline;
+    padding-right:20px;
+}
+
+
+
+nav a:visited{
+    color: white;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: purple;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 ul {
