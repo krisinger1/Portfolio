@@ -39,7 +39,6 @@ B7CCAB lt green
 
 main {
     padding: 20px;
-    background-color: #dfe3e3;
 }
 
 body{
@@ -47,6 +46,8 @@ body{
     font-size: .9em;
     color: #000000;
     line-height: 1.5em;
+    background-color: #e5e8e8;
+
 }
 
 h1 {
@@ -159,7 +160,7 @@ ul {
 }
 
 .hidden {
-    visibility: hidden;;
+    visibility: hidden;
 }
 
 #projects {
@@ -183,7 +184,7 @@ ul {
     align-items: center;
     justify-content:center;
     flex-shrink: 0; /* Prevents the image from shrinking */
-    width: 225px;
+    width: 250px;
 }
 
 .project-image {
