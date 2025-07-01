@@ -6,19 +6,21 @@
         <script src="./script.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Slabo+27px&display=swap" rel="stylesheet">
 
     </head>
     <body>
-        <header>
-            <h1>Kristin Risinger</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <header class="overlay-container">
+            <div class="overlay-content">
+                <h1>Kristin Risinger</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </nav>
+            </div>
         </header>
 
         <main>
@@ -30,9 +32,35 @@
 
             <section id="projects">
                 <h2>Projects</h2>
-                <p>This is my portfolio!</p>
+
+
+                <div class="project-container">
+                    <div class="blue-bar"></div>
+                    <div class="project-image-container">
+                         <a href="https://krisinger1.github.io/BoardGameClub" target="_blank"><img src="images/board-game-club.png" alt="Project Image" class="project-image"> </a>
+                    </div>
+                    <div class="project-description">
+                        <h3><a href="https://krisinger1.github.io/BoardGameClub" target="_blank">Board Game Club Website</a></h3>
+                        <p>This is a website I built for a board game club. It includes information about the club, upcoming events, and a gallery of photos from past events.</p>
+                    </div>
+                </div>
+
+
+                <div class="project-container">
+                    <div class="blue-bar"></div>
+                    <div class="project-image-container">
+                        
+                        <a href="" target="_blank"><img src="images/tennis-buddy-screenshot.png" alt="Project Image" class="project-image"></a>
+                    </div>  
+                    <div class="project-description">
+                        <h3><a href="" target="_blank">Tennis Buddy App</a></h3>
+                        <p>I created an app for my husband to notify him when there is good weather coming up for playing tennis. The app gets weather data from the internet and displays time periods where the conditions are suitable for outdoor playing. Once a day, the user receives a notification to remind them to look at the list of tennis times the app has found. Clicking the notification takes the user to a list of new tennis times. Clicking on an item in the list takes user to detail view where they can invite a friend to play by email or message, add the event to their calendar, or reject that time because they are unavailable. User can also go to a map view to choose a location on the map where they want to play tennis at that time. This can be a custom location or a Point of Interest.</p>
+                    </div>
+                </div>   
+                
+                
                 <ul>
-                    <li id="blue">Prep Scheduler <button onclick="learnMore()">Learn more!</button></li>
+                    <li id="blue">Saturday Game Club<button onclick="learnMore()">Learn more!</button></li>
                     <li>Euchre Six Hand</li>
                     <li>Tennis Buddy</li>
                     <li class="hidden">I was hidden!!</li>

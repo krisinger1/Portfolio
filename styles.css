@@ -1,8 +1,30 @@
 * {
     margin: 0;
     /* padding: 0; */ 
-    border: 1px pink solid;
+    /* border: 1px pink solid; */
 }
+
+/* Color Theme Swatches in Hex */
+/* .Fantastic-sunset,-palm-trees-in-tropical-beach.-1-hex { color: #011640; }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-2-hex { color: #010D26; }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-3-hex { color: #048C8C; }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-4-hex { color: #F2CA99; }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-5-hex { color: #F26938; } */
+
+/* Color Theme Swatches in RGBA */
+/* .Fantastic-sunset,-palm-trees-in-tropical-beach.-1-rgba { color: rgba(1, 22, 63, 1); }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-2-rgba { color: rgba(0, 13, 38, 1); }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-3-rgba { color: rgba(4, 140, 140, 1); }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-4-rgba { color: rgba(242, 201, 152, 1); }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-5-rgba { color: rgba(242, 105, 55, 1); } */
+
+/* Color Theme Swatches in HSLA */
+/* .Fantastic-sunset,-palm-trees-in-tropical-beach.-1-hsla { color: hsla(219, 96, 12, 1); }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-2-hsla { color: hsla(219, 96, 7, 1); }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-3-hsla { color: hsla(180, 94, 28, 1); }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-4-hsla { color: hsla(33, 77, 77, 1); }
+.Fantastic-sunset,-palm-trees-in-tropical-beach.-5-hsla { color: hsla(16, 87, 58, 1); } */
+
 
 /*
 9C466A pink
@@ -17,12 +39,19 @@ B7CCAB lt green
 
 main {
     padding: 20px;
+    background-color: #dfe3e3;
 }
 
+body{
+    font-family: 'Open Sans',sans-serif;
+    font-size: .9em;
+    color: #000000;
+    line-height: 1.5em;
+}
 
 h1 {
     font-family: 'Slabo 27px',Gerogia, serif;
-    font-size: 2.5em;
+    font-size: 3.0em;
     font-weight: 400;;
     color: ivory
 }
@@ -30,20 +59,66 @@ h1 {
 h2 {
     font-family: 'Slabo 27px',Gerogia, serif;
     font-size: 1.5em;
-    color: cornflowerblue;
+    color: #074757;
+    margin-top: 25px;
+    margin-bottom: 10px;;
+}
+
+h3 {
+    font-family: 'Slabo 27px',Gerogia, serif;
+    font-size: 1.2em;
+    color: #074757;
 }
 
 header {
-    background-color: rgb(101, 155, 69);
+    display: flex;
+    align-items: flex-end;
+    min-height: 200px;
+    max-height: 250px;
+    position: relative;
+    z-index: 2;
+}
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url('images/meritt-thomas-B4P1WwFHmOE-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /*Black with 50% opacity*/
+    z-index: 1;
+}
+
+.overlay-content {
     text-align: left;
     padding: 20px;
     margin: 0px;    
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
+
 nav {
+    color: white;
     font-family: 'Slabo 27px',Gerogia, serif;
-    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 1.25em;;
     text-align: left;
+    height: 30px;
+    margin-top:20px;
 }
 
 nav ul{
@@ -59,20 +134,25 @@ nav li {
 
 
 
-nav a:visited{
-    color: white;
-}
+
 
 nav a:link {
     text-decoration: none;
     color: white;
 }
 
-nav a:hover {
-    color: purple;
+nav a:visited{
     font-weight: bold;
-    font-size: 1.2em;
+    color: #74b9b9;
 }
+
+nav a:hover {
+    color: #048C8C;
+    font-weight: bold;
+    /* font-size: 1.2em; */
+}
+
+
 
 ul {
     list-style-type: circle;
@@ -80,4 +160,71 @@ ul {
 
 .hidden {
     visibility: hidden;;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.project-container{
+    display:flex;
+    margin: 5px 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 950px;
+}
+
+.project-image-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 225px;
+}
+
+.project-image {
+    max-width: 200px;
+    max-height: 200px;
+    /* border: #074757 5px solid; */
+    /* border-radius: 10px; */
+    margin-right: 10px;
+    box-shadow: #6d6d6d 2px 2px 5px;
+}
+
+.project-description {
+    padding: 10px;
+}
+
+.project-container h3 {
+    color: #074757;
+}
+
+.project-container a:link{    
+    text-decoration: none;
+    color: #074757; 
+
+}
+
+.project-container a:visited{    
+    text-decoration: none;
+    color:#048C8C; 
+
+}
+.project-container a:hover{    
+    text-decoration: none;
+    color: #F26938; 
+
+}
+
+.blue-bar {
+    background-color: #74b9b9;
+    margin:0px 5px 0px 0px;
+    width:20px;
+    /* border:#74b9b9 3px solid; */
+    border-radius: 5px 0px 0px 5px;
+    flex-shrink: 0;
 }
